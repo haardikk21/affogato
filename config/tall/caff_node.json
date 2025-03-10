@@ -1,0 +1,81 @@
+{
+    "parent-chain": {},
+    "chain": {
+        "id": 1003202501,
+        "info-files": [
+            "/config/l2_chain_info.json"
+        ]
+    },
+    "node": {
+        "staker": {
+            "enable": false
+        },
+        "sequencer": true,
+        "dangerous": {
+            "no-sequencer-coordinator": true,
+            "disable-blob-reader": true,
+            "no-l1-listener": true
+        },
+        "delayed-sequencer": {
+            "enable": false
+        },
+        "parent-chain-reader": {
+            "enable": false
+        },
+        "seq-coordinator": {
+            "enable": false
+        },
+        "batch-poster": {
+            "enable": false
+        },
+        "block-validator": {
+            "enable": false
+        },
+        "feed": {
+            "input": {},
+            "output": {
+                "enable": false,
+                "signed": false,
+                "addr": "0.0.0.0"
+            }
+        },
+        "data-availability": {
+            "enable": false
+        }
+    },
+    "execution": {
+        "sequencer": {
+            "enable": true,
+            "caff-node-config": {
+                "hotshot-urls": [
+                    "https://query.decaf.testnet.espresso.network/v0"
+                ],
+                "next-hotshot-block": 2111038,
+                "namespace": 1003202501,
+                "parent-chain-node-url": "wss://arbitrum-sepolia-rpc.publicnode.com",
+                "sequencer-url": "http://nitro-node-tall:8547",
+                "hotshot-polling-interval": "1ms",
+                "retry-time": "2s",
+                "parent-chain-reader": {
+                    "enable": true,
+                    "use-finality-data": true
+                },
+                "espresso-tee-verifier-addr": "0x8354db765810dF8F24f1477B06e91E5b17a408bF"
+            },
+            "enable-caff-node": true
+        },
+        "forwarding-target": "null"
+    },
+    "persistent": {
+        "chain": "local",
+        "db-engine": "leveldb"
+    },
+    "ws": {
+        "addr": "0.0.0.0"
+    },
+    "http": {
+        "addr": "0.0.0.0",
+        "vhosts": "*",
+        "corsdomain": "*"
+    }
+}

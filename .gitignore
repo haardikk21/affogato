@@ -2,5 +2,6 @@
 
 database/
 wasm/
+caff-database/
 
 config/**/full_node.json
