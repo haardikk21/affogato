@@ -1,0 +1,3 @@
+[submodule "nitro-contracts"]
+	path = nitro-contracts
+	url = https://github.com/EspressoSystems/nitro-contracts.git

@@ -1,0 +1,47 @@
+# Affogato Tall Deployment Addresses
+
+Starting Block Number: 130997758
+
+### Initial Deployment
+
+Deploying contracts with maxDataSize: 104857
+
+- New Bridge created at address: 0xe4456036Dca5d676A9c28Bf60De22aaEd92E14d8
+- New SequencerInbox created at address: 0x9A826A8f2d4ae949a53a7fD3aEc8e10c41207cE1 104857 0x0000000000000000000000000000000000000000 false
+- New Inbox created at address: 0xdB2D5e1Ce97daFE1201bdD904316c1669A88b3Eb 104857
+- New RollupEventInbox created at address: 0x7882B5FAea804468f838cc2a03195aa3AC471638
+- New Outbox created at address: 0x8B6002c7daE51821e6C1d703CF576B4e8f0909A0
+- New ERC20Bridge created at address: 0xbAA2491909a7876D0c17e802906F1a151C169D25
+- New SequencerInbox created at address: 0xA2DC9bDd68C685c0cad72B6Ea0F8dE05B066c8D1 104857 0x0000000000000000000000000000000000000000 true
+- New ERC20Inbox created at address: 0xE06e6d686B16Ac6906D6399B9c94a4c11Be09cC1 104857
+- New ERC20RollupEventInbox created at address: 0xD59dA02385595De94A6831C8e1d5a5e556b9e807
+- New ERC20Outbox created at address: 0x81855457c22A05c2742e8abD03943c335365578D
+- New BridgeCreator created at address: 0xC6a1Ca827d2DDb5c833cc72bf0eC13f74Af4215a 0xe4456036Dca5d676A9c28Bf60De22aaEd92E14d8,0x9A826A8f2d4ae949a53a7fD3aEc8e10c41207cE1,0xdB2D5e1Ce97daFE1201bdD904316c1669A88b3Eb,0x7882B5FAea804468f838cc2a03195aa3AC471638,0x8B6002c7daE51821e6C1d703CF576B4e8f0909A0 0xbAA2491909a7876D0c17e802906F1a151C169D25,0xA2DC9bDd68C685c0cad72B6Ea0F8dE05B066c8D1,0xE06e6d686B16Ac6906D6399B9c94a4c11Be09cC1,0xD59dA02385595De94A6831C8e1d5a5e556b9e807,0x81855457c22A05c2742e8abD03943c335365578D
+- New OneStepProver0 created at address: 0x9C9AD1a0eC622aF4d6D7eC511d20eCc5cfC3E576
+- New OneStepProverMemory created at address: 0xaD5aa52284FDa119F4Ab07DaBcD16d846a0185dB
+- New OneStepProverMath created at address: 0xF0d1cef9A5e8f88e87A034352B5Cdc8dF99EE131
+- New OneStepProverHostIo created at address: 0xB718F14C5f47768CD8010eD24F25165D15426af6
+- New OneStepProofEntry created at address: 0xb9122A33FdceEcF8e575F8E6eC3c6b8C7f7D854f 0x9C9AD1a0eC622aF4d6D7eC511d20eCc5cfC3E576 0xaD5aa52284FDa119F4Ab07DaBcD16d846a0185dB 0xF0d1cef9A5e8f88e87A034352B5Cdc8dF99EE131 0xB718F14C5f47768CD8010eD24F25165D15426af6
+- New ChallengeManager created at address: 0x00Bea1d622efE546280DB085e096F95150c7e115
+- New RollupAdminLogic created at address: 0x25Df425c1BE723479082793B65AC228430350D6b
+- New RollupUserLogic created at address: 0xe6D79d761CFFB9129F4B356dA2742f28Bf45956f
+- New ValidatorUtils created at address: 0x5D3e695f43905885473b295A09b96aCA654A6855
+- New ValidatorWalletCreator created at address: 0x4FcC51ebBcf67828d650bdc66e51626D55771B44
+- New RollupCreator created at address: 0x63531901f4B61F0976B4fc29fa802346F5744f63
+- New DeployHelper created at address: 0x74a8C4D246F6aF150f0Db8410DC4F1C50D5756c0
+- New RollupProxy created at address: 0xCad38fc1104b1Bb9067F589c29816F512177596E
+
+### Create ETH Rollup
+
+RollupProxy Contract created at address: 0x6dAF24B3c97E32920220d6A44E23D11459d54d2D
+
+Inbox (proxy) Contract created at address: 0x02d4E56Fd0A66af08649D253EB95c956B2396BF9
+Outbox (proxy) Contract created at address: 0xec3b26b8174C19b6AB78a33BB94b594768B8D1C4
+rollupEventInbox (proxy) Contract created at address: 0x9e4FbF67FDDd48Da3E3997eE4A1e16271d48Fb40
+challengeManager (proxy) Contract created at address: 0xacC169c039f7Bc7cB5444c62b108535c8ea468B9
+AdminProxy Contract created at address: 0xc6f69Cc2bacc911DDDECE6D243aFF46B90f132f6
+SequencerInbox (proxy) created at address: 0x40b753d076592BC75c2df461A3f600499dE9C99D
+Bridge (proxy) Contract created at address: 0x2C0Ea08dCf80614116CBFc269A9eAeb5A036aD3a
+ValidatorUtils Contract created at address: 0x5D3e695f43905885473b295A09b96aCA654A6855
+ValidatorWalletCreator Contract created at address: 0x4FcC51ebBcf67828d650bdc66e51626D55771B44
+All deployed at block number: 131001908
