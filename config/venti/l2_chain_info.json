@@ -1,0 +1,52 @@
+[
+    {
+        "chain-name": "affogato-venti",
+        "parent-chain-id": 421614,
+        "parent-chain-is-arbitrum": true,
+        "sequencer-url": "",
+        "secondary-forwarding-target": "",
+        "feed-url": "",
+        "secondary-feed-url": "",
+        "das-index-url": "",
+        "has-genesis-state": false,
+        "chain-config": {
+            "chainId": 1003202503,
+            "homesteadBlock": 0,
+            "daoForkSupport": true,
+            "eip150Block": 0,
+            "eip150Hash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "eip155Block": 0,
+            "eip158Block": 0,
+            "byzantiumBlock": 0,
+            "constantinopleBlock": 0,
+            "petersburgBlock": 0,
+            "istanbulBlock": 0,
+            "muirGlacierBlock": 0,
+            "berlinBlock": 0,
+            "londonBlock": 0,
+            "clique": {
+                "period": 0,
+                "epoch": 0
+            },
+            "arbitrum": {
+                "EnableArbOS": true,
+                "AllowDebugPrecompiles": true,
+                "DataAvailabilityCommittee": false,
+                "InitialArbOSVersion": 32,
+                "InitialChainOwner": "0x76C0e3C7b6d7a3EF29B0D9fCAf19926a8c9dEfBe",
+                "GenesisBlockNum": 0
+            }
+        },
+        "rollup": {
+            "bridge": "0xf2D1a7358241D994e3cA7fbcc6c8c39d8eb19F26",
+            "inbox": "0xF80c260b6E3CAd42D33377656A6851A6F395D26B",
+            "sequencer-inbox": "0x0b9F1CE52b4ae2E83ee1f20C28E24E7a02B8a94B",
+            "deployed-at": 131012148,
+            "rollup": "0xDD67F3f52e0Fd88e07C0D80eb477a10dA32D78a1",
+            "native-token": "0x0000000000000000000000000000000000000000",
+            "upgrade-executor": "0x6e1000a849471bCC27807e682cFAA68EBe041bA0",
+            "validator-utils": "0xC1B28925346f8CEeB0D129B8499051603D3AAD47",
+            "validator-wallet-creator": "0x7eBA62D147897e641bc05505bdA4bb3fE8fe8b29"
+        }
+    }
+]

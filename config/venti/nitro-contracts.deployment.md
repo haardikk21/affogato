@@ -1,5 +1,6 @@
 # Affogato Venti Deployment Addresses
 
+Chain ID: 1003202503
 Starting Block Number: 131008108
 
 - New Bridge created at address: 0x35743de5cA97a7E4567FFeA8cc18005BE06431B5
@@ -40,5 +41,6 @@ SequencerInbox (proxy) created at address: 0x0b9F1CE52b4ae2E83ee1f20C28E24E7a02B
 Bridge (proxy) Contract created at address: 0xf2D1a7358241D994e3cA7fbcc6c8c39d8eb19F26
 ValidatorUtils Contract created at address: 0xC1B28925346f8CEeB0D129B8499051603D3AAD47
 ValidatorWalletCreator Contract created at address: 0x7eBA62D147897e641bc05505bdA4bb3fE8fe8b29
+Upgrade Executor: 0x6e1000a849471bCC27807e682cFAA68EBe041bA0
 
 All deployed at block number: 131012148

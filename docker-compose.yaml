@@ -1,0 +1,88 @@
+version: "2.2"
+services:
+  nitro-tall:
+    image: ghcr.io/espressosystems/nitro-espresso-integration/nitro-node:integration
+    container_name: nitro-node-tall
+    env_file:
+      - .env
+    ports:
+      - "7547:8547"
+      - "7548:8548"
+      - "7549:8549"
+    command: --conf.file /config/full_node.json
+    volumes:
+      - ./config/tall:/config
+      - ./wasm/tall:/home/user/wasm/
+      - ./database/tall:/home/user/.arbitrum
+    depends_on:
+      - validation_node-tall
+
+  validation_node-tall:
+    image: ghcr.io/espressosystems/nitro-espresso-integration/nitro-node:integration
+    container_name: validation_node-tall
+    env_file:
+      - .env
+    ports:
+      - "7949:8549"
+    volumes:
+      - ./config/tall:/config
+    entrypoint: /usr/local/bin/nitro-val
+    command: --conf.file /config/validation_node_config.json
+
+  nitro-grande:
+    image: ghcr.io/espressosystems/nitro-espresso-integration/nitro-node:integration
+    container_name: nitro-node-grande
+    env_file:
+      - .env
+    ports:
+      - "8547:8547"
+      - "8548:8548"
+      - "8549:8549"
+    command: --conf.file /config/full_node.json
+    volumes:
+      - ./config/grande:/config
+      - ./wasm/grande:/home/user/wasm/
+      - ./database/grande:/home/user/.arbitrum
+    depends_on:
+      - validation_node-grande
+
+  validation_node-grande:
+    image: ghcr.io/espressosystems/nitro-espresso-integration/nitro-node:integration
+    container_name: validation_node-grande
+    env_file:
+      - .env
+    ports:
+      - "8949:8549"
+    volumes:
+      - ./config/grande:/config
+    entrypoint: /usr/local/bin/nitro-val
+    command: --conf.file /config/validation_node_config.json
+
+  nitro-venti:
+    image: ghcr.io/espressosystems/nitro-espresso-integration/nitro-node:integration
+    container_name: nitro-node-venti
+    env_file:
+      - .env
+    ports:
+      - "9547:8547"
+      - "9548:8548"
+      - "9549:8549"
+    command: --conf.file /config/full_node.json
+    volumes:
+      - ./config/venti:/config
+      - ./wasm/venti:/home/user/wasm/
+      - ./database/venti:/home/user/.arbitrum
+    depends_on:
+      - validation_node-venti
+
+  validation_node-venti:
+    image: ghcr.io/espressosystems/nitro-espresso-integration/nitro-node:integration
+    container_name: validation_node-venti
+    env_file:
+      - .env
+    ports:
+      - "9949:8549"
+    volumes:
+      - ./config/venti:/config
+    entrypoint: /usr/local/bin/nitro-val
+    command: --conf.file /config/validation_node_config.json

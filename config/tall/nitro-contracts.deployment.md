@@ -1,5 +1,6 @@
 # Affogato Tall Deployment Addresses
 
+Chain ID: 1003202501
 Starting Block Number: 130997758
 
 ### Initial Deployment
@@ -44,4 +45,5 @@ SequencerInbox (proxy) created at address: 0x40b753d076592BC75c2df461A3f600499dE
 Bridge (proxy) Contract created at address: 0x2C0Ea08dCf80614116CBFc269A9eAeb5A036aD3a
 ValidatorUtils Contract created at address: 0x5D3e695f43905885473b295A09b96aCA654A6855
 ValidatorWalletCreator Contract created at address: 0x4FcC51ebBcf67828d650bdc66e51626D55771B44
+UpgradeExecutor: 0xDd45fb42f32E2C2aD0941767e77140efFe59545F
 All deployed at block number: 131001908

@@ -1,5 +1,6 @@
 # Affogato Grande Deployment Addresses
 
+Chain ID: 1003202502
 Starting Block Number: 131002379
 
 ### Initial Deployment
@@ -44,5 +45,6 @@ SequencerInbox (proxy) created at address: 0x432109D948679F3AE969b860F9DdE701eC8
 Bridge (proxy) Contract created at address: 0x2A8dCdB885308ae87ffea0534CF1D449FaF42973
 ValidatorUtils Contract created at address: 0x0f001cC7DbA7e9409959d9292C77aDd9075a2422
 ValidatorWalletCreator Contract created at address: 0xecCAdD672Fbb6721771E63F8D182244a90a6FBeB
+Upgrade Executor: 0x43139b62AbEd0F172e65c7dcF6094460BE107961
 
 All deployed at block number: 131007632

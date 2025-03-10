@@ -1,0 +1,52 @@
+[
+    {
+        "chain-name": "affogato-grande",
+        "parent-chain-id": 421614,
+        "parent-chain-is-arbitrum": true,
+        "sequencer-url": "",
+        "secondary-forwarding-target": "",
+        "feed-url": "",
+        "secondary-feed-url": "",
+        "das-index-url": "",
+        "has-genesis-state": false,
+        "chain-config": {
+            "chainId": 1003202502,
+            "homesteadBlock": 0,
+            "daoForkSupport": true,
+            "eip150Block": 0,
+            "eip150Hash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "eip155Block": 0,
+            "eip158Block": 0,
+            "byzantiumBlock": 0,
+            "constantinopleBlock": 0,
+            "petersburgBlock": 0,
+            "istanbulBlock": 0,
+            "muirGlacierBlock": 0,
+            "berlinBlock": 0,
+            "londonBlock": 0,
+            "clique": {
+                "period": 0,
+                "epoch": 0
+            },
+            "arbitrum": {
+                "EnableArbOS": true,
+                "AllowDebugPrecompiles": true,
+                "DataAvailabilityCommittee": false,
+                "InitialArbOSVersion": 32,
+                "InitialChainOwner": "0x76C0e3C7b6d7a3EF29B0D9fCAf19926a8c9dEfBe",
+                "GenesisBlockNum": 0
+            }
+        },
+        "rollup": {
+            "bridge": "0x2A8dCdB885308ae87ffea0534CF1D449FaF42973",
+            "inbox": "0x66C9378e9d5f2D7770ba804c545172De78bC456C",
+            "sequencer-inbox": "0x432109D948679F3AE969b860F9DdE701eC8c0637",
+            "deployed-at": 131007632,
+            "rollup": "0x648e980A9f71DdFc9a50E15c77C221b509D40aFD",
+            "native-token": "0x0000000000000000000000000000000000000000",
+            "upgrade-executor": "0x43139b62AbEd0F172e65c7dcF6094460BE107961",
+            "validator-utils": "0x0f001cC7DbA7e9409959d9292C77aDd9075a2422",
+            "validator-wallet-creator": "0xecCAdD672Fbb6721771E63F8D182244a90a6FBeB"
+        }
+    }
+]
