@@ -2,3 +2,5 @@
 
 database/
 wasm/
+
+config/**/full_node.json
