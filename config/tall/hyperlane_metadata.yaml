@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../schema.json
+chainId: 1003202501
+displayName: Affogato Tall
+domainId: 1003202501
+index:
+  from: 12
+isTestnet: true
+name: tall
+nativeToken:
+  decimals: 18
+  name: Ether
+  symbol: ETH
+protocol: ethereum
+rpcUrls:
+  - http: http://localhost:7550
+technicalStack: arbitrumnitro

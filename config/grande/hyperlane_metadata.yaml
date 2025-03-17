@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../schema.json
+chainId: 1003202502
+displayName: Affogato Grande
+domainId: 1003202502
+index:
+  from: 10
+isTestnet: true
+name: grande
+nativeToken:
+  decimals: 18
+  name: Ether
+  symbol: ETH
+protocol: ethereum
+rpcUrls:
+  - http: http://localhost:8550
+technicalStack: arbitrumnitro

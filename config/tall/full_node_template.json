@@ -52,7 +52,7 @@
             "wait-for-max-delay": true,
             "resubmit-espresso-tx-deadline": "2m",
             "parent-chain-wallet": {
-                "private-key": "$AFFOGATO_BATCHER_PRIVATE_KEY"
+                "private-key": "AFFOGATO_BATCHER_PRIVATE_KEY"
             },
             "max-delay": "1m"
         },
