@@ -7,3 +7,6 @@
 [submodule "contracts/lib/permit2"]
 	path = contracts/lib/permit2
 	url = https://github.com/Uniswap/permit2
+[submodule "token-bridge-contracts"]
+	path = token-bridge-contracts
+	url = https://github.com/OffchainLabs/token-bridge-contracts.git
