@@ -36,10 +36,11 @@ This project has a variety of moving parts. On a high level, it includes the fol
 
 1. Rollups: Three caffeinated rollups deployed with Arbitrum Sepolia as the parent chain
 2. Hyperlane Core: Core Hyperlane contracts deployed on each rollup to enable message passing between chains
-3. Open Intents Contracts: ERC-7683 based contracts from the Open Intents Framework used for the onchain intent creation and settlement across all rollups
-4. Filler: Offchain filler/solver node listening to the caffeinated nodes for new intents being created, and subsequently filling the orders on the destination chains from a token inventory it maintains
-5. Rebalancer: Offchain component of the filler node that is periodically rebalancing its own token inventory across the different rollups utilizing Arbitrum's native bridge
-6. UI: Frontend interface
+3. Token Bridges: Arbitrum token bridge contracts deployed on each rollup + a bridged USDC token for filler inventory rebalancing in demo ETH/USDC swaps
+4. Open Intents Contracts: ERC-7683 based contracts from the Open Intents Framework used for the onchain intent creation and settlement across all rollups
+5. Filler: Offchain filler/solver node listening to the caffeinated nodes for new intents being created, and subsequently filling the orders on the destination chains from a token inventory it maintains
+6. Rebalancer: Offchain component of the filler node that is periodically rebalancing its own token inventory across the different rollups utilizing Arbitrum's native ETH bridge and deployed token bridges
+7. UI: Frontend interface
 
 ## Rollups
 
@@ -53,6 +54,7 @@ Affogato consists of three rollups that were deployed. All three are following t
 - Chain Slug: `affogato-tall`
 - Chain ID: `1003202501`
 - Chain Contracts: [Contracts](./config/tall/nitro-contracts.deployment.md)
+- Token Bridge Contracts: [Contracts](./config/tall/token-bridge-contracts.deployment.md)
 - Hyperlane Contracts: [Contracts](./config/tall/hyperlane-contracts.deployment.md)
 
 #### Affogato Grande
@@ -61,6 +63,7 @@ Affogato consists of three rollups that were deployed. All three are following t
 - Chain Slug: `affogato-grande`
 - Chain ID: `1003202502`
 - Chain Contracts: [Contracts](./config/grande/nitro-contracts.deployment.md)
+- Token Bridge Contracts: [Contracts](./config/grande/token-bridge-contracts.deployment.md)
 - Hyperlane Contracts: [Contracts](./config/grande/hyperlane-contracts.deployment.md)
 
 #### Affogato Venti
@@ -69,6 +72,7 @@ Affogato consists of three rollups that were deployed. All three are following t
 - Chain Slug: `affogato-venti`
 - Chain ID: `1003202503`
 - Chain Contracts: [Contracts](./config/venti/nitro-contracts.deployment.md)
+- Token Bridge Contracts: [Contracts](./config/venti/token-bridge-contracts.deployment.md)
 - Hyperlane Contracts: [Contracts](./config/venti/hyperlane-contracts.deployment.md)
 
 ## Infrastructure
