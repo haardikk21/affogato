@@ -28,6 +28,8 @@ This is a decent approach, but can be made better by relying on much stronger co
 3. Solver releases USDC on Chian B to the User's address
 4. At some point later, transaction is marked settled on Chain A through a settlement system and solver is paid their ETH
 
+Periodically (in practice, with a large enough inventory, once every day or few days), the filler runs a rebalancer to move ETH and USDC around across different rollups using the Arbitrum ETH and ERC20 bridges as inventory starts getting biased towards certain chains.
+
 The faster speed here comes with zero tradeoffs unlike optimistic bridges because Espresso's confirmations guarantee the transaction will be included and finalized in the batch later on.
 
 ## Project Elements
@@ -77,7 +79,15 @@ Affogato consists of three rollups that were deployed. All three are following t
 
 ## Infrastructure
 
-Each chain has Hyperlane contracts deployed on it as well. The Hyperlane nodes (validator and relayer) are listening to the Caffeinated Nodes for each chain, enabling them to act as soon as an Espresso Confirmation is received without waiting for finality.
+Each chain has Hyperlane contracts deployed on it. The Hyperlane nodes (validator and relayer) are listening to the Caffeinated Nodes for each chain, enabling them to act as soon as an Espresso Confirmation is received without waiting for finality.
+
+Each chain also has Arbitrum's token bridge contracts deployed on it, used to enable USDC bridging from L2 <> L3.
+
+Each chain uses the same three accounts for Validator/Staker, Batch Poster, and Solver
+
+- Validator: 0x76C0e3C7b6d7a3EF29B0D9fCAf19926a8c9dEfBe
+- Batch Poster: 0x09Ae7beCfA1b627890e151F173BF728b419B2d5f
+- Solver: 0x82328a10707D760528bE24A5B0516E80d9a5fa57
 
 ## Local Development
 
