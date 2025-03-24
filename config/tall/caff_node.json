@@ -50,9 +50,9 @@
                 "hotshot-urls": [
                     "https://query.decaf.testnet.espresso.network/v0"
                 ],
-                "next-hotshot-block": 2111038,
+                "next-hotshot-block": 2375380,
                 "namespace": 1003202501,
-                "parent-chain-node-url": "wss://arbitrum-sepolia-rpc.publicnode.com",
+                "parent-chain-node-url": "wss://arbitrum-sepolia.testnet.espresso.network:4443",
                 "sequencer-url": "http://nitro-node-tall:8547",
                 "hotshot-polling-interval": "1ms",
                 "retry-time": "2s",

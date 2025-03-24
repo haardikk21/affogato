@@ -45,7 +45,7 @@ export const chainsMetadata = [
     slug: "tall",
     rpcUrls: {
       default: {
-        http: ["http://127.0.0.1:7547"],
+        http: ["http://127.0.0.1:7550"],
       },
     },
     blockExplorers: undefined,
@@ -103,7 +103,7 @@ export const chainsMetadata = [
     slug: "grande",
     rpcUrls: {
       default: {
-        http: ["http://127.0.0.1:8547"],
+        http: ["http://127.0.0.1:8550"],
       },
     },
     blockExplorers: undefined,
@@ -161,7 +161,7 @@ export const chainsMetadata = [
     slug: "venti",
     rpcUrls: {
       default: {
-        http: ["http://127.0.0.1:9547"],
+        http: ["http://127.0.0.1:9550"],
       },
     },
     blockExplorers: undefined,
