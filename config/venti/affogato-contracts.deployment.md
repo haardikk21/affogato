@@ -1,3 +1,7 @@
 # Affogato Venti Contracts Deployment
 
 Permit2: 0x000000000022D473030F116dDEE9F6B43aC78BA3
+
+Venti Router Address: 0x494252216a3a1BED62aA96826Fcb8058EBcCab6B
+Venti Router Implementation Address: 0x7698Cb70e2A7305C7b18E793199b84a4865d1788
+Venti Router Proxy Admin Address: 0x54E9660905C61088Ed66C1d6f997d1B0Fe1e7869
