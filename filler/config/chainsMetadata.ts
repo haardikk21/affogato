@@ -29,7 +29,6 @@ export const chainsMetadata = [
       symbol: "USDC",
       decimals: 6,
     },
-
     hyperlane: {
       domainId: 421614,
       mailbox: "0x598facE78a4302f11E3de0bee1894Da0b2Cb71F8",
@@ -89,6 +88,9 @@ export const chainsMetadata = [
       childWeth: "0xB7DE7d2A1819887359BC6C61E80DdFE0124bD4B9",
       childWethGateway: "0x9641D0D2045f54f32a0eE931fdB5576F82FfEd75",
     },
+    oif: {
+      router: "0x812D663E1a2fa39F4523fd29fDbDB21C857F5BB9",
+    },
   },
   {
     id: 1003202502,
@@ -144,6 +146,9 @@ export const chainsMetadata = [
       childWeth: "0xF66914d810B30eB42c169A9fA52e464C71E50387",
       childWethGateway: "0xe4a0e97Cdeedd3e4F01bace0E819Fc13288C13E0",
     },
+    oif: {
+      router: "0x494252216a3a1BED62aA96826Fcb8058EBcCab6B",
+    },
   },
   {
     id: 1003202503,
@@ -198,6 +203,9 @@ export const chainsMetadata = [
       childProxyAdmin: "0x88A32632f26c6E0bF066F1E71Fd170Ff9F0E9a37",
       childWeth: "0x96a6eF6B8a17f069B22c2a88181b2F34744c857a",
       childWethGateway: "0x2b96E2C6ddef530db8B286d77D5d33e681d87A6d",
+    },
+    oif: {
+      router: "0x494252216a3a1BED62aA96826Fcb8058EBcCab6B",
     },
   },
 ] as const satisfies ChainMetadata[];

@@ -1,5 +1,7 @@
 import type { ArbitrumNetwork } from "@arbitrum/sdk";
 
+export type ChainSlug = (typeof chainsMetadata)[number]["slug"];
+
 export type BaseChainMetadata = {
   id: number;
   name: string;
@@ -40,6 +42,9 @@ export type ParentChainMetadata = BaseChainMetadata & {
 export type RollupChainMetadata = BaseChainMetadata &
   ArbitrumNetwork & {
     isParentChain: false;
+    oif: {
+      router: string;
+    };
   };
 
 export type ChainMetadata = ParentChainMetadata | RollupChainMetadata;

@@ -16,16 +16,14 @@ import {
 } from "ethers";
 import { erc20Abi } from "./abis/erc20";
 import { chainsMetadata } from "./config/chainsMetadata";
-import { isRollupChain } from "./config/types";
+import { isRollupChain, type ChainSlug } from "./config/types";
 import { log } from "./logger";
 import { NonceManager } from "@ethersproject/experimental";
 import { formatEther, formatUnits } from "ethers/lib/utils";
 
-type ChainSlug = (typeof chainsMetadata)[number]["slug"];
-
 export class Rebalancer {
-  account: Wallet;
-  clients: Record<ChainSlug, Signer>;
+  private account: Wallet;
+  private clients: Record<ChainSlug, Signer>;
 
   constructor(account: Wallet) {
     this.account = account;
