@@ -159,6 +159,13 @@ export class Filler {
       await waitForTransactionReceipt(client, { hash: tx });
 
       // settlement
+
+      // if (
+      //   Number(event.args.resolvedOrder.originChainId) === destinationChain.id
+      // ) {
+      //   continue;
+      // }
+
       const settlementGasValue = await destinationSettler.read.quoteGasPayment([
         Number(event.args.resolvedOrder.originChainId),
       ]);
