@@ -7,7 +7,6 @@ import {
   getContract,
   http,
   maxUint256,
-  parseEventLogs,
   zeroAddress,
   type Account,
   type WalletClient,
@@ -15,7 +14,7 @@ import {
   type WatchContractEventReturnType,
 } from "viem";
 import { privateKeyToAccount } from "viem/accounts";
-import { getTransactionReceipt, waitForTransactionReceipt } from "viem/actions";
+import { waitForTransactionReceipt } from "viem/actions";
 import { hyperlane7683Abi } from "./abis/hyperlane7683";
 import { chainsMetadata } from "./config/chainsMetadata";
 import type { ChainSlug } from "./config/types";
@@ -69,8 +68,12 @@ export class Filler {
         abi: hyperlane7683Abi,
         eventName: "Open",
         onLogs: async (logs) => {
-          for (const log of logs) {
-            await this.fillOrder(log);
+          for (const eventLog of logs) {
+            try {
+              await this.fillOrder(eventLog);
+            } catch (error) {
+              log.error(error);
+            }
           }
         },
       });

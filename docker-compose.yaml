@@ -142,3 +142,15 @@ services:
       - caff_node-tall
       - caff_node-grande
       - caff_node-venti
+
+  affogato-filler:
+    build:
+      context: filler
+      dockerfile: filler/Dockerfile
+    container_name: affogato-filler
+    env_file:
+      - .env
+    depends_on:
+      - caff_node-tall
+      - caff_node-grande
+      - caff_node-venti
