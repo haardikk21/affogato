@@ -68,6 +68,7 @@ export class Filler {
         abi: hyperlane7683Abi,
         eventName: "Open",
         onLogs: async (logs) => {
+          log.info(`Received Open event on chain ${chain.name}`);
           for (const eventLog of logs) {
             try {
               await this.fillOrder(eventLog);
