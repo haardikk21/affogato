@@ -15,6 +15,9 @@ export type BaseChainMetadata = {
     default: {
       http: [string, ...string[]];
     };
+    caff?: {
+      http: [string, ...string[]];
+    };
   };
   blockExplorers?: {
     default: {

@@ -7,6 +7,7 @@ import {
   getContract,
   http,
   maxUint256,
+  parseEventLogs,
   zeroAddress,
   type Account,
   type WalletClient,
@@ -14,11 +15,14 @@ import {
   type WatchContractEventReturnType,
 } from "viem";
 import { privateKeyToAccount } from "viem/accounts";
-import { waitForTransactionReceipt } from "viem/actions";
+import { getTransactionReceipt, waitForTransactionReceipt } from "viem/actions";
 import { hyperlane7683Abi } from "./abis/hyperlane7683";
 import { chainsMetadata } from "./config/chainsMetadata";
 import type { ChainSlug } from "./config/types";
 import { log } from "./logger";
+
+const zeroBytes32Address =
+  "0x0000000000000000000000000000000000000000000000000000000000000000";
 
 type OpenOrderLog = WatchContractEventOnLogsParameter<
   typeof hyperlane7683Abi,
@@ -57,7 +61,7 @@ export class Filler {
 
       const publicClient = createPublicClient({
         chain,
-        transport: http(),
+        transport: http(chain.rpcUrls.caff.http[0]),
       });
 
       const unwatch = publicClient.watchContractEvent({
@@ -139,7 +143,8 @@ export class Filler {
       });
 
       const output = event.args.resolvedOrder.maxSpent[i];
-      const value = output.token === zeroAddress ? output.amount : BigInt(0);
+      const value =
+        output.token === zeroBytes32Address ? output.amount : BigInt(0);
 
       const tx = await destinationSettler.write.fill(
         [

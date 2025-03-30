@@ -47,6 +47,9 @@ export const chainsMetadata = [
       default: {
         http: ["https://nitro.tall.affogato.haardik.dev"],
       },
+      caff: {
+        http: ["https://caff.tall.affogato.haardik.dev"],
+      },
     },
     blockExplorers: undefined,
     isParentChain: false,
@@ -105,6 +108,9 @@ export const chainsMetadata = [
       default: {
         http: ["https://nitro.grande.affogato.haardik.dev"],
       },
+      caff: {
+        http: ["https://caff.grande.affogato.haardik.dev"],
+      },
     },
     blockExplorers: undefined,
     isParentChain: false,
@@ -162,6 +168,9 @@ export const chainsMetadata = [
     rpcUrls: {
       default: {
         http: ["https://nitro.venti.affogato.haardik.dev"],
+      },
+      caff: {
+        http: ["https://caff.venti.affogato.haardik.dev"],
       },
     },
     blockExplorers: undefined,

@@ -1,7 +1,7 @@
 import { Wallet } from "ethers";
+import { Filler } from "./filler";
 import { log } from "./logger";
 import { Rebalancer } from "./rebalancer";
-import { Filler } from "./filler";
 
 const main = async () => {
   log.info("🙍 Affogato Solver 📝");
@@ -11,7 +11,14 @@ const main = async () => {
   const rebalancer = new Rebalancer(wallet);
   const filler = new Filler(wallet);
 
-  await rebalancer.getBalances();
+  await rebalancer.attemptRebalanceIfNecessary();
+
+  const SIXTY_MINUTES = 60 * 60 * 1000;
+  setInterval(async () => {
+    // Check if we need rebalancing once every hour
+    await rebalancer.attemptRebalanceIfNecessary();
+  }, SIXTY_MINUTES);
+
   filler.start();
   // await rebalancer.rebalanceFunds();
   // await rebalancer.bridgeEthL2ToL1(chainsMetadata[1].id, 1);

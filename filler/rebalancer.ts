@@ -47,6 +47,45 @@ export class Rebalancer {
     }
   }
 
+  async attemptRebalanceIfNecessary() {
+    const balances = await this.getBalances();
+
+    const totalEthBalance = Object.values(balances).reduce(
+      (acc, balance) => acc.add(balance.ethBalance),
+      BigNumber.from(0)
+    );
+
+    const totalUsdcBalance = Object.values(balances).reduce(
+      (acc, balance) => acc.add(balance.usdcBalance),
+      BigNumber.from(0)
+    );
+
+    // From the four chains, each chain should have ideally 25% of the total balance of ETH
+    // and 25% of the total balance of USDC
+    // If any single chain has less than 5% of the total balance of a token, we should trigger
+    // reblancing
+
+    const chains = Object.keys(balances);
+    const minimumEthBalancePerChain = totalEthBalance.div(20);
+    const minimumUsdcBalancePerChain = totalUsdcBalance.div(20);
+
+    for (const chain of chains) {
+      const balance = balances[chain];
+      if (
+        balance.ethBalance.lt(minimumEthBalancePerChain) ||
+        balance.usdcBalance.lt(minimumUsdcBalancePerChain)
+      ) {
+        log.info(
+          `Balance on ${chain} is less than minimum threshold. Initiating a rebalance...`
+        );
+        await this.rebalanceFunds();
+        return;
+      }
+    }
+
+    log.info("No rebalancing necessary");
+  }
+
   async getBalances(): Promise<
     Record<ChainSlug, { ethBalance: BigNumber; usdcBalance: BigNumber }>
   > {
