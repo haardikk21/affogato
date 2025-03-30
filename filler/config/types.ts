@@ -1,4 +1,5 @@
 import type { ArbitrumNetwork } from "@arbitrum/sdk";
+import type { chainsMetadata } from "./chainsMetadata";
 
 export type ChainSlug = (typeof chainsMetadata)[number]["slug"];
 

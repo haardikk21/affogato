@@ -6,10 +6,11 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { ChainSlug } from "../../filler/config/types";
 
 interface ChainSelectorProps {
-  value: string;
-  setValue: (value: string) => void;
+  value: ChainSlug;
+  setValue: (value: ChainSlug) => void;
 }
 
 export function ChainSelector({ value, setValue }: ChainSelectorProps) {
