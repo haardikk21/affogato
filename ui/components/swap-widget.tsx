@@ -401,7 +401,8 @@ export function SwapWidget() {
                 <>
                   <LoaderIcon className="size-4 animate-spin" />
                   <span>
-                    Waiting for filler to fill order on destination chain...
+                    Waiting for Espresso finality for created order on origin
+                    chain...
                   </span>
                 </>
               )}
@@ -448,7 +449,7 @@ export function SwapWidget() {
                 <>
                   <LoaderIcon className="size-4 animate-spin" />
                   <span>
-                    Waiting for order to be settled on origin chain...
+                    Waiting for Espresso finality for settlement transaction...
                   </span>
                 </>
               )}

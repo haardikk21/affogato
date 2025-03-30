@@ -144,12 +144,10 @@ services:
       - caff_node-venti
 
   affogato-filler:
-    build:
-      context: filler
-      dockerfile: filler/Dockerfile
+    build: ./filler
     container_name: affogato-filler
     env_file:
-      - .env
+      - ./filler/.env
     depends_on:
       - caff_node-tall
       - caff_node-grande
