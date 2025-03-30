@@ -45,7 +45,7 @@ export const chainsMetadata = [
     slug: "tall",
     rpcUrls: {
       default: {
-        http: ["http://127.0.0.1:7550"],
+        http: ["https://nitro.tall.affogato.haardik.dev"],
       },
     },
     blockExplorers: undefined,
@@ -103,7 +103,7 @@ export const chainsMetadata = [
     slug: "grande",
     rpcUrls: {
       default: {
-        http: ["http://127.0.0.1:8550"],
+        http: ["https://nitro.grande.affogato.haardik.dev"],
       },
     },
     blockExplorers: undefined,
@@ -161,7 +161,7 @@ export const chainsMetadata = [
     slug: "venti",
     rpcUrls: {
       default: {
-        http: ["http://127.0.0.1:9550"],
+        http: ["https://nitro.venti.affogato.haardik.dev"],
       },
     },
     blockExplorers: undefined,

@@ -12,5 +12,5 @@ nativeToken:
   symbol: ETH
 protocol: ethereum
 rpcUrls:
-  - http: http://127.0.0.1:8550
+  - http: https://nitro.grande.affogato.haardik.dev
 technicalStack: arbitrumnitro
