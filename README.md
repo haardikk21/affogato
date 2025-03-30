@@ -56,6 +56,7 @@ Affogato consists of three rollups that were deployed. All three are following t
 - Chain Slug: `affogato-tall`
 - Chain ID: `1003202501`
 - RPC URL: `https://nitro.tall.affogato.haardik.dev`
+- CreateRollup Transaction: [Sepolia ArbiScan](https://sepolia.arbiscan.io/tx/0x3f683bf71c1d7e377d8606a77c005923df7a31f548d1160dd282434d921d02af)
 - Chain Contracts: [Contracts](./config/tall/nitro-contracts.deployment.md)
 - Token Bridge Contracts: [Contracts](./config/tall/token-bridge-contracts.deployment.md)
 - Hyperlane Contracts: [Contracts](./config/tall/hyperlane-contracts.deployment.md)
@@ -66,6 +67,7 @@ Affogato consists of three rollups that were deployed. All three are following t
 - Chain Slug: `affogato-grande`
 - Chain ID: `1003202502`
 - RPC URL: `https://nitro.grande.affogato.haardik.dev`
+- CreateRollup Transaction: [Sepolia ArbiScan](https://sepolia.arbiscan.io/tx/0x25fc87fcede6197c7b1da4f2fb496994a2d2ddeea20df126432f38ae9eeb7d54)
 - Chain Contracts: [Contracts](./config/grande/nitro-contracts.deployment.md)
 - Token Bridge Contracts: [Contracts](./config/grande/token-bridge-contracts.deployment.md)
 - Hyperlane Contracts: [Contracts](./config/grande/hyperlane-contracts.deployment.md)
@@ -76,6 +78,7 @@ Affogato consists of three rollups that were deployed. All three are following t
 - Chain Slug: `affogato-venti`
 - Chain ID: `1003202503`
 - RPC URL: `https://nitro.venti.affogato.haardik.dev`
+- CreateRollup Transaction: [Sepolia ArbiScan](https://sepolia.arbiscan.io/tx/0x95d75352afcbe2fc1986b549ea86e4d396fe40c20a36201643a6da2302326b11)
 - Chain Contracts: [Contracts](./config/venti/nitro-contracts.deployment.md)
 - Token Bridge Contracts: [Contracts](./config/venti/token-bridge-contracts.deployment.md)
 - Hyperlane Contracts: [Contracts](./config/venti/hyperlane-contracts.deployment.md)

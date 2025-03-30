@@ -12,5 +12,5 @@ nativeToken:
   symbol: ETH
 protocol: ethereum
 rpcUrls:
-  - http: https://nitro.venti.affogato.haardik.dev
+  - http: http://caff_node-venti:8547
 technicalStack: arbitrumnitro
